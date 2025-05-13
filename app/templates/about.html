@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About | WeStrive</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+  <header>
+    <h1>Welcome to WeStrive</h1>
+    <nav>
+      <a href="{{ url_for('main.home') }}">Home</a>
+      <a href="{{ url_for('main.about') }}">About</a>
+      <a href="{{ url_for('main.programs') }}">Programs</a>
+      <a href="{{ url_for('main.get_involved') }}">Get Involved</a>
+      <a href="{{ url_for('main.contact') }}">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>About Us</h2>
+      <p>WeStrive is a nonprofit organization committed to empowering communities through education, outreach, and support. We believe in fostering local leadership and sustainable impact.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 WeStrive. All rights reserved.</p>
+  </footer>
+</body>
+</html>

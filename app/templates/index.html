@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <title>WeStrive</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
   <header>
     <h1>Welcome to WeStrive</h1>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="programs.html">Programs</a>
-      <a href="get-involved.html">Get Involved</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+      <a href="{{ url_for('main.home') }}">Home</a>
+      <a href="{{ url_for('main.about') }}">About</a>
+      <a href="{{ url_for('main.programs') }}">Programs</a>
+      <a href="{{ url_for('main.get_involved') }}">Get Involved</a>
+      <a href="{{ url_for('main.contact') }}">Contact</a>
+  </nav>
   </header>
 
   <main>
